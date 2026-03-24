@@ -1,6 +1,6 @@
-package dev.Zerphyis.shortUrl.infra.repositoryJpa;
+package dev.Zerphyis.shortUrl.infra.jpas.repositoryJpa;
 
-import dev.Zerphyis.shortUrl.infra.entitieJpa.UrlEntity;
+import dev.Zerphyis.shortUrl.infra.jpas.entitieJpa.UrlEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

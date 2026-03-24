@@ -1,10 +1,10 @@
-package dev.Zerphyis.shortUrl.infra.repositoryJpa.adapter;
+package dev.Zerphyis.shortUrl.infra.jpas.repositoryJpa.adapter;
 
 import dev.Zerphyis.shortUrl.domain.entities.UrlModel;
 import dev.Zerphyis.shortUrl.domain.repository.UrlRepository;
-import dev.Zerphyis.shortUrl.infra.Mappers.UrlMapper;
-import dev.Zerphyis.shortUrl.infra.entitieJpa.UrlEntity;
-import dev.Zerphyis.shortUrl.infra.repositoryJpa.UrlRepositoryJpa;
+import dev.Zerphyis.shortUrl.infra.jpas.Mappers.UrlMapper;
+import dev.Zerphyis.shortUrl.infra.jpas.entitieJpa.UrlEntity;
+import dev.Zerphyis.shortUrl.infra.jpas.repositoryJpa.UrlRepositoryJpa;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

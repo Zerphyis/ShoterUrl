@@ -1,7 +1,7 @@
-package dev.Zerphyis.shortUrl.infra.Mappers;
+package dev.Zerphyis.shortUrl.infra.jpas.Mappers;
 
 import dev.Zerphyis.shortUrl.domain.entities.UrlModel;
-import dev.Zerphyis.shortUrl.infra.entitieJpa.UrlEntity;
+import dev.Zerphyis.shortUrl.infra.jpas.entitieJpa.UrlEntity;
 
 public class UrlMapper {
     public static UrlModel toModel(UrlEntity entity) {

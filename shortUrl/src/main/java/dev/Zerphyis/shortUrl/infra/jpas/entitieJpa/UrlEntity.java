@@ -1,4 +1,4 @@
-package dev.Zerphyis.shortUrl.infra.entitieJpa;
+package dev.Zerphyis.shortUrl.infra.jpas.entitieJpa;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
