@@ -11,3 +11,12 @@ O sistema permite gerar URLs curtas, redirecionar para o destino original e estr
 * **Bean Validation**
 * **Maven**
 * **MySQL**
+
+ ## 🎯 Objetivo
+
+Este projeto foi desenvolvido para demonstrar:
+* Construção de APIs REST robustas.
+* Aplicação de **Clean Architecture** na prática.
+* Organização de código orientada a domínio.
+* Padronização de respostas e erros.
+* Baixo acoplamento entre camadas.
