@@ -20,3 +20,16 @@ Este projeto foi desenvolvido para demonstrar:
 * Organização de código orientada a domínio.
 * Padronização de respostas e erros.
 * Baixo acoplamento entre camadas.
+
+## 🧠 Arquitetura
+
+O projeto segue uma abordagem de Arquitetura em Camadas com influência de Clean Architecture, separando claramente as responsabilidades.
+
+### Estrutura de Pastas
+```text
+dev.Zerphyis.shortUrl
+│
+├── domain          # Núcleo da aplicação (regras puras e interfaces)
+├── application     # Casos de uso / serviços e DTOs
+├── infra           # Controllers, persistência (banco) e integrações
+└── config          # Configurações do framework
