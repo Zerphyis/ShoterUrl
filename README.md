@@ -114,3 +114,43 @@ JSON
   "message": "URL deleted successfully"
 }
 ````
+
+## 🗄️ Configuração do Banco de Dados (MySQL)
+
+Certifique-se de ter o MySQL instalado e em execução.
+
+* *1. Criar banco de dados:*
+````
+SQL
+CREATE DATABASE shorturl;
+````
+* *2. Configuração no application.properties:*
+````
+Properties
+spring.datasource.url=jdbc:mysql://localhost:3306/shorturl
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+````
+### 🧩 Decisões Técnicas
+* Java Records: Utilizados para DTOs para garantir imutabilidade e reduzir boilerplate.
+
+* ControllerAdvice: Centralização de exceções para melhor experiência do desenvolvedor/consumidor.
+
+* Separação Domain vs Infra: Facilita testes unitários e permite trocar o banco de dados sem impactar a regra de negócio.
+
+## 🛠️ Como executar
+````
+# Clone o repositório
+git clone [https://github.com/Zerphyis/ShoterUrl.git](https://github.com/Zerphyis/ShoterUrl.git)
+
+# Entre no diretório
+cd ShoterUrl
+
+# Execute a aplicação
+./mvnw spring-boot:run
+Aplicação disponível em: http://localhost:8080
+````
