@@ -33,3 +33,10 @@ dev.Zerphyis.shortUrl
 ├── application     # Casos de uso / serviços e DTOs
 ├── infra           # Controllers, persistência (banco) e integrações
 └── config          # Configurações do framework
+```
+### 🔍 Detalhamento das Camadas
+🧩 Domain: Entidades principais e interfaces de repositório. Contém regras independentes de framework e não depende de nenhuma outra camada.
+
+⚙️ Application: Serviços (use cases) e DTOs (records). Responsável por orquestrar a lógica, criar URLs e validar regras.
+
+🌐 Infrastructure (Infra): Controllers REST, implementação de repositórios e tratamento global de exceções. Interfaceia com o mundo externo (HTTP e Banco de Dados).
