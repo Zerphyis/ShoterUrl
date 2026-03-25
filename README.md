@@ -40,3 +40,12 @@ dev.Zerphyis.shortUrl
 ⚙️ Application: Serviços (use cases) e DTOs (records). Responsável por orquestrar a lógica, criar URLs e validar regras.
 
 🌐 Infrastructure (Infra): Controllers REST, implementação de repositórios e tratamento global de exceções. Interfaceia com o mundo externo (HTTP e Banco de Dados).
+
+## ⚙️ Funcionalidades
+ * *🔗 Encurtar URL: Recebe uma URL válida, gera um identificador único (slug/hash) e persiste no banco.*
+
+ * *🔁 Redirecionamento: Ao acessar /{shortCode}, o sistema retorna um HTTP 302 Redirect para a URL original.*
+
+ * *📄 Consulta: Recupera dados da URL encurtada (estrutura preparada para métricas futuras).*
+
+ * *❌ Tratamento Global de Erros: Implementado com @ControllerAdvice para garantir respostas consistentes.*
