@@ -49,3 +49,68 @@ dev.Zerphyis.shortUrl
  * *📄 Consulta: Recupera dados da URL encurtada (estrutura preparada para métricas futuras).*
 
  * *❌ Tratamento Global de Erros: Implementado com @ControllerAdvice para garantir respostas consistentes.*
+
+
+
+
+## 📡 Endpoints da API
+A URL base da aplicação é: http://localhost:8080/api/urls
+
+### 1. Criar URL Curta
+*POST /api/urls*
+
+Request:
+````
+JSON
+{
+  "url": "[https://google.com](https://google.com)"
+}
+````
+Response (201 Created):
+````
+JSON
+{
+  "url": "http://localhost:8080/api/urls/r/abc123"
+}
+````
+### 2. Redirecionamento
+*GET /api/urls/r/{code}*
+Ação: Redireciona via HTTP 302 Found para a URL original de destino.
+
+### 3. Buscar URL por ID
+*GET /api/urls/{id}*
+Response (200 OK):
+````
+JSON
+{
+  "id": 1,
+  "fullUrl": "[https://google.com](https://google.com)",
+  "shortUrl": "http://localhost:8080/api/urls/r/abc123"
+}
+````
+### 4. Listar Todas as URLs
+* GET /api/urls*
+
+Response (200 OK):
+````
+JSON
+{
+  "urls": [
+    {
+      "id": 1,
+      "fullUrl": "[https://google.com](https://google.com)",
+      "shortUrl": "http://localhost:8080/api/urls/r/abc123"
+    }
+  ]
+}
+````
+### 5. Deletar URL
+* DELETE /api/urls/{id}*
+
+Response (200 OK):
+````
+JSON
+{
+  "message": "URL deleted successfully"
+}
+````
