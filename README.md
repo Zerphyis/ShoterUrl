@@ -1,4 +1,11 @@
 ## 🔗 ShoterUrl - URL Shortener API
+![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-A60000?style=for-the-badge&logo=architecture&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
 
 API RESTful para encurtamento de URLs desenvolvida com Spring Boot, aplicando princípios de Clean Architecture, separação de responsabilidades e boas práticas modernas de backend.
 
